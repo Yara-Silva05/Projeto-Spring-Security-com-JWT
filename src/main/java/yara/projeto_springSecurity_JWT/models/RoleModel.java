@@ -1,4 +1,4 @@
-package models;
+package yara.projeto_springSecurity_JWT.models;
 
 import jakarta.persistence.*;
 

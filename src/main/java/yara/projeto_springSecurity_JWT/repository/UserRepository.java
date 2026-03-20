@@ -1,6 +1,6 @@
-package repository;
+package yara.projeto_springSecurity_JWT.repository;
 
-import models.UserModel;
+import yara.projeto_springSecurity_JWT.models.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.UUID;

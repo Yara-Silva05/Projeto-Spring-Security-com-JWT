@@ -1,6 +1,6 @@
-package repository;
+package yara.projeto_springSecurity_JWT.repository;
 
-import models.RoleModel;
+import yara.projeto_springSecurity_JWT.models.RoleModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,5 +1,4 @@
-package models;
-
+package yara.projeto_springSecurity_JWT.models;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -14,6 +13,8 @@ public class PostModel {
     @Column(name = "POST_ID")
     private Long postID;
 
+    @ManyToOne
+    @JoinColumn(name = "USER_ID")
     private UserModel user;
 
     private String content;
