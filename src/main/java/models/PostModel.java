@@ -11,6 +11,7 @@ public class PostModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "POST_ID")
     private Long postID;
 
     private UserModel user;
@@ -19,4 +20,36 @@ public class PostModel {
 
     @CreationTimestamp
     private Instant creationTimestamp;
+
+    public Long getPostID() {
+        return postID;
+    }
+
+    public void setPostID(Long postID) {
+        this.postID = postID;
+    }
+
+    public UserModel getUser() {
+        return user;
+    }
+
+    public void setUser(UserModel user) {
+        this.user = user;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Instant getCreationTimestamp() {
+        return creationTimestamp;
+    }
+
+    public void setCreationTimestamp(Instant creationTimestamp) {
+        this.creationTimestamp = creationTimestamp;
+    }
 }
